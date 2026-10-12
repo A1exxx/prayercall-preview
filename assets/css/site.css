@@ -1,7 +1,7 @@
 :root {
   --navy: #14234b;
   --navy-soft: #33415f;
-  --gold: #a9701c;
+  --gold: #8a5a10;
   --gold-bright: #c98b2b;
   --gold-pale: #f0d9a8;
   --paper: #fbf7ee;
@@ -146,7 +146,7 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
 .sec-head { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(1.25rem, 4vw, 3rem); align-items: center; padding-block: clamp(1.5rem, 4vw, 3rem); }
 .sec-text h1, .page-head h1, .article h1 { font-size: clamp(2.1rem, 5vw, 3.6rem); font-weight: 800; text-transform: uppercase; margin: .8rem 0 .8rem; }
 .sec-text p, .page-head p { color: var(--navy-soft); font-size: 1.05rem; max-width: 60ch; }
-.video { position: relative; aspect-ratio: 16 / 9; border-radius: 6px; border: 10px solid var(--paper); box-shadow: var(--shadow); background: linear-gradient(180deg, rgba(12, 22, 48, .25), rgba(12, 22, 48, .7)), var(--pic) center / cover; display: grid; place-items: center; }
+.video { position: relative; aspect-ratio: 16 / 9; border-radius: 6px; border: 10px solid var(--paper); box-shadow: var(--shadow); background: #33415f center / cover no-repeat; display: grid; place-items: center; }
 .play { display: grid; place-items: center; width: 72px; height: 72px; border-radius: 50%; background: rgba(255, 253, 248, .92); color: var(--gold); box-shadow: 0 10px 24px -8px rgba(0, 0, 0, .6); }
 .play .ic { width: 30px; height: 30px; margin-left: 4px; }
 .video-note { position: absolute; left: .75rem; bottom: .75rem; right: .75rem; display: flex; align-items: center; gap: .5rem; padding: .45rem .7rem; border: 1px dashed rgba(255, 255, 255, .7); border-radius: 6px; color: #fff; font-size: .85rem; font-weight: 500; background: rgba(12, 22, 48, .55); }
@@ -159,7 +159,7 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
 .list i { font: 600 1.5rem/1 "Oswald", var(--sans); font-style: normal; color: var(--gold-bright); }
 .list span span { display: block; color: var(--navy-soft); font-size: .93rem; }
 .list strong { display: block; font: 700 1.2rem/1.25 var(--serif); color: var(--navy); margin-bottom: .2rem; }
-.note { font-size: .93rem; color: var(--navy-soft); padding: .7rem .9rem; background: #fffdf8; border-left: 3px solid var(--gold-bright); border-radius: 0 6px 6px 0; }
+.note { font-size: .93rem; color: var(--navy-soft); padding: .7rem .9rem; background: #fffdf8; border: 1px solid var(--gold-pale); border-radius: 6px; }
 .note a { color: var(--gold); font-weight: 600; }
 .res-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
 .res { display: grid; grid-template-columns: 120px 1fr; gap: 1rem; padding: .9rem; background: #fffdf8; border: 1px solid var(--paper-edge); border-radius: 6px; }
@@ -179,7 +179,7 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
 .prose h2, .prose h3 { margin: 1.4em 0 .5em; font-size: 1.4rem; }
 .prose h3 { font-size: 1.2rem; }
 .prose a { color: var(--gold); font-weight: 600; overflow-wrap: anywhere; }
-.prose blockquote { margin: 0 0 1em; padding: .2rem 0 .2rem 1rem; border-left: 3px solid var(--gold-bright); font: 700 1.2rem/1.4 var(--serif); color: var(--navy); }
+.prose blockquote { margin: 0 0 1em; padding: .9rem 1.1rem; background: #fffdf8; border: 1px solid var(--gold-pale); border-radius: 6px; font: 700 1.2rem/1.4 var(--serif); color: var(--navy); }
 .prose blockquote p { margin: 0; }
 .prose ul, .prose ol { padding-left: 1.3rem; }
 .prose li { margin-bottom: .4em; }
