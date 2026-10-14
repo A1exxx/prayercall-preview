@@ -71,8 +71,8 @@ a:hover > .arrow, a:hover strong > .arrow { transform: translateX(4px); }
 .hero h1 .gold { color: #9a6212; }
 .stroke { position: absolute; left: 26%; bottom: 0; width: min(52%, 320px); height: 18px; background: linear-gradient(90deg, transparent, #c98b2b 18%, #e0ad55 60%, transparent); border-radius: 60% 40% 70% 30% / 100%; transform: rotate(-7deg); opacity: .9; filter: blur(.4px); }
 .leaf { position: absolute; z-index: 1; pointer-events: none; filter: drop-shadow(0 14px 14px rgba(20, 35, 75, .22)); }
-.leaf-a { width: min(40vw, 460px); left: -15%; top: -36%; transform: rotate(14deg); }
-.leaf-b { width: min(26vw, 280px); right: -5%; bottom: -8%; transform: rotate(-28deg); }
+.leaf-a { width: min(30vw, 380px); left: 2%; top: 0; transform: rotate(-12deg); }
+.leaf-b { z-index: 3; width: min(22vw, 270px); right: 1.5%; bottom: 2%; transform: rotate(-20deg); }
 
 .polaroid { position: relative; justify-self: end; width: min(100%, 400px); padding: 14px 14px 12px; background: #f7f0e1; border-radius: 3px; box-shadow: 0 22px 40px -18px rgba(20, 35, 75, .7), 0 2px 0 rgba(255, 255, 255, .7) inset; transform: rotate(4deg); transition: transform .5s var(--ease); }
 .polaroid:hover, .polaroid:focus-within { transform: rotate(2deg) translateY(-4px); }
@@ -218,6 +218,12 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
 .fold-text[open] > summary { margin-bottom: .6rem; }
 .prose .fold { margin-top: 1rem; }
 
+.sec-text .slogan { font: 700 clamp(1.25rem, 2.6vw, 1.7rem)/1.3 var(--serif); color: var(--gold); max-width: 30ch; }
+.about-text .prose { max-width: 70ch; }
+.article-wide { max-width: 1000px; }
+.group-lead { color: var(--navy-soft); font-size: 1.05rem; max-width: 60ch; }
+.article-wide .block { margin-top: 1rem; }
+
 /* Подвал */
 .foot { background: var(--navy); color: #d9dfee; margin-top: 2rem; }
 .foot-in { display: grid; grid-template-columns: 1.3fr 1fr auto; gap: 2rem; padding-block: 2rem; font-size: .93rem; }
@@ -239,8 +245,8 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
   .lang a { padding: .6rem 1.1rem; }
   .hero-in { grid-template-columns: 1fr; gap: 1.25rem; padding-block: 1.5rem 2.5rem; }
   .hero h1 { font-size: clamp(2.5rem, 12.5vw, 4.2rem); padding-bottom: 1.1rem; }
-  .leaf-a { width: 58vw; left: auto; right: -30%; top: -15%; transform: scaleX(-1) rotate(14deg); }
-  .leaf-b { width: 38vw; right: -12%; bottom: -3%; }
+  .leaf-a { width: 44vw; left: auto; right: 2%; top: 1%; transform: rotate(-150deg) scaleY(-1); }
+  .leaf-b { width: 34vw; right: 0; bottom: 1%; }
   .polaroid { justify-self: center; width: min(84%, 320px); transform: rotate(2.5deg); padding: 10px 10px 8px; }
   .slides { aspect-ratio: 1 / .82; }
   .cards { grid-template-columns: 1fr; gap: .7rem; margin-top: -1rem; }
