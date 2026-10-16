@@ -160,4 +160,21 @@
     });
     restore();
   }
+  // Регистрация в копии ничего не отправляет: только проверяет поля и объясняет
+  var reg = document.querySelector("[data-reg]");
+  if (reg) {
+    reg.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var msg = reg.querySelector(".reg-msg");
+      var empty = Array.prototype.filter.call(reg.querySelectorAll("[required]"), function (f) {
+        return !f.value.trim();
+      });
+      if (empty.length) {
+        msg.textContent = msg.getAttribute("data-need");
+        empty[0].focus();
+        return;
+      }
+      msg.textContent = msg.getAttribute("data-done");
+    });
+  }
 })();

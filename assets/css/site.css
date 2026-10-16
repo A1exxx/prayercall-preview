@@ -224,6 +224,17 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
 .group-lead { color: var(--navy-soft); font-size: 1.05rem; max-width: 60ch; }
 .article-wide .block { margin-top: 1rem; }
 
+.reg { display: grid; grid-template-columns: 1fr minmax(0, 440px); gap: clamp(1.25rem, 4vw, 3rem); align-items: start; padding-block: clamp(1.5rem, 4vw, 3rem); }
+.reg h1 { font-size: clamp(2.1rem, 5vw, 3.4rem); font-weight: 800; text-transform: uppercase; margin-bottom: .8rem; }
+.reg-text > p:not(.note) { color: var(--navy-soft); font-size: 1.05rem; max-width: 48ch; }
+.regform { display: grid; gap: .9rem; }
+.regform label span { display: block; font-size: .85rem; font-weight: 600; color: var(--navy-soft); margin-bottom: .25rem; }
+.regform input, .regform select { width: 100%; min-height: 44px; padding: .5rem .75rem; border: 1px solid var(--paper-edge); border-radius: 8px; background: #fffdf8; font: inherit; font-size: 1rem; color: var(--navy); }
+.regform .btn { width: 100%; margin-top: .3rem; }
+.reg-msg { margin: 0; min-height: 1.4em; font-size: .9rem; font-weight: 600; color: var(--gold); }
+.reg-have { margin: 0; font-size: .9rem; color: var(--navy-soft); }
+.reg-have a { color: var(--gold); font-weight: 600; }
+
 /* Подвал */
 .foot { background: var(--navy); color: #d9dfee; margin-top: 2rem; }
 .foot-in { display: grid; grid-template-columns: 1.3fr 1fr auto; gap: 2rem; padding-block: 2rem; font-size: .93rem; }
@@ -264,7 +275,7 @@ cite { display: block; margin-top: .3rem; font-style: normal; font-weight: 600; 
   .connect img { max-height: 150px; }
   .connect > div { padding: 0 .5rem .6rem; }
   .sec-head { grid-template-columns: 1fr; }
-  .res-grid, .pair, .about { grid-template-columns: 1fr; }
+  .res-grid, .pair, .about, .reg { grid-template-columns: 1fr; }
   .res p { -webkit-line-clamp: 2; }
   .about img { max-width: 220px; margin-inline: auto; }
   .event { grid-template-columns: 1fr; }
